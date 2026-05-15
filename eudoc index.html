@@ -1,0 +1,351 @@
+export default function CEDocGeneratorPortal() {
+  return (
+    <div className="min-h-screen bg-slate-950 text-white font-sans">
+      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold tracking-wide">CE Certification DOC Generator</h1>
+            <p className="text-slate-400 text-sm">EU DOC • Technical File • CE Compliance Templates</p>
+          </div>
+
+          <nav className="hidden md:flex gap-6 text-sm text-slate-300">
+            <a href="#features" className="hover:text-cyan-400 transition">Features</a>
+            <a href="#templates" className="hover:text-cyan-400 transition">Templates</a>
+            <a href="#generator" className="hover:text-cyan-400 transition">DOC Generator</a>
+            <a href="#pricing" className="hover:text-cyan-400 transition">Pricing</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/10 blur-3xl"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 rounded-full px-4 py-2 text-sm text-cyan-300 mb-6">
+              AI Powered CE Documentation Platform
+            </div>
+
+            <h2 className="text-5xl md:text-6xl font-black leading-tight">
+              Generate
+              <span className="text-cyan-400"> EU DOC </span>
+              Certificates Instantly
+            </h2>
+
+            <p className="mt-6 text-slate-300 text-lg leading-relaxed max-w-xl">
+              Create professional EU Declaration of Conformity certificates online.
+              Enter product details, harmonized standards, directives, and technical information.
+              Download ready-to-use Word or PDF certificates instantly.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <button className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 py-3 rounded-2xl shadow-xl transition">
+                Start Creating
+              </button>
+
+              <button className="border border-slate-700 hover:border-cyan-400 px-6 py-3 rounded-2xl transition">
+                View Templates
+              </button>
+            </div>
+
+            <div className="grid grid-cols-3 gap-4 mt-10">
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                <h3 className="text-3xl font-bold text-cyan-400">100+</h3>
+                <p className="text-slate-400 text-sm mt-1">Certificate Templates</p>
+              </div>
+
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                <h3 className="text-3xl font-bold text-cyan-400">PDF</h3>
+                <p className="text-slate-400 text-sm mt-1">Export Support</p>
+              </div>
+
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                <h3 className="text-3xl font-bold text-cyan-400">DOCX</h3>
+                <p className="text-slate-400 text-sm mt-1">Word Download</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl">
+              <h3 className="text-2xl font-bold mb-6">Quick DOC Generator</h3>
+
+              <div className="space-y-5">
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Product Name"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Model Number"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                />
+
+                <textarea
+                  rows="4"
+                  placeholder="Product Function"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                ></textarea>
+
+                <input
+                  type="text"
+                  placeholder="Applied EU Directives"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                />
+
+                <textarea
+                  rows="4"
+                  placeholder="Applied Harmonized Standards"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-cyan-400"
+                ></textarea>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <button className="bg-cyan-500 text-black font-semibold py-3 rounded-xl hover:bg-cyan-400 transition">
+                    Download PDF
+                  </button>
+
+                  <button className="bg-white text-black font-semibold py-3 rounded-xl hover:bg-slate-200 transition">
+                    Download DOCX
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-black">Platform Features</h2>
+          <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
+            Advanced AI-based CE compliance document generation platform for certification engineers.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              title: 'EU DOC Generator',
+              desc: 'Generate professional EU Declaration of Conformity documents automatically.'
+            },
+            {
+              title: 'Directive Database',
+              desc: 'Integrated database of Machinery, EMC, LVD, RED and other directives.'
+            },
+            {
+              title: 'Standards Library',
+              desc: 'Store harmonized standards with year and technical descriptions.'
+            },
+            {
+              title: 'Online Export',
+              desc: 'Instant export in PDF and Microsoft Word formats.'
+            },
+            {
+              title: 'Cloud Templates',
+              desc: 'Use multiple modern DOC certificate layouts and branding styles.'
+            },
+            {
+              title: 'Annexure Creator',
+              desc: 'Automatically create Annex I and model lists.'
+            },
+            {
+              title: 'Company Profiles',
+              desc: 'Save manufacturer details and generate certificates faster.'
+            },
+            {
+              title: 'Live Web Access',
+              desc: 'Host online through GitHub Pages or Vercel hosting.'
+            }
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-slate-900 border border-slate-800 rounded-3xl p-6 hover:border-cyan-400 transition"
+            >
+              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="templates" className="bg-slate-900 border-y border-slate-800 py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between mb-14 flex-wrap gap-5">
+            <div>
+              <h2 className="text-4xl font-black">Professional Templates</h2>
+              <p className="text-slate-400 mt-3">
+                Select from multiple EU DOC layouts.
+              </p>
+            </div>
+
+            <button className="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition">
+              Browse All Templates
+            </button>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1,2,3,4,5,6].map((item)=>(
+              <div key={item} className="bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:border-cyan-400 transition">
+                <div className="h-64 bg-gradient-to-br from-slate-800 to-slate-700 flex items-center justify-center text-slate-400 text-xl font-semibold">
+                  Template Preview {item}
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold">EU DOC Template {item}</h3>
+                  <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                    Professional declaration of conformity template with annexure support and digital signature section.
+                  </p>
+
+                  <button className="mt-6 w-full bg-cyan-500 text-black font-semibold py-3 rounded-xl hover:bg-cyan-400 transition">
+                    Use Template
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="generator" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 className="text-4xl font-black leading-tight">
+              Advanced AI Certificate Builder
+            </h2>
+
+            <p className="text-slate-400 mt-5 leading-relaxed text-lg">
+              Build complete EU DOC files using intelligent structured forms.
+              Store directives, standards, technical construction file references,
+              and manufacturer details.
+            </p>
+
+            <div className="space-y-5 mt-10">
+              {[
+                'Dynamic directive selector',
+                'Automatic standards formatting',
+                'PDF & DOCX export',
+                'Digital signature support',
+                'Online database integration',
+                'Technical file references',
+                'Annexure auto generation',
+                'Company branding support'
+              ].map((feature, index)=>(
+                <div key={index} className="flex items-center gap-4 bg-slate-900 border border-slate-800 rounded-2xl p-4">
+                  <div className="w-4 h-4 rounded-full bg-cyan-400"></div>
+                  <span className="text-slate-200">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+            <h3 className="text-3xl font-bold mb-8">DOC Configuration</h3>
+
+            <div className="space-y-5">
+              <select className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3">
+                <option>Select EU Directive</option>
+                <option>Machinery Directive 2006/42/EC</option>
+                <option>Low Voltage Directive 2014/35/EU</option>
+                <option>EMC Directive 2014/30/EU</option>
+                <option>RED Directive 2014/53/EU</option>
+              </select>
+
+              <select className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3">
+                <option>Select Harmonized Standard</option>
+                <option>EN ISO 12100</option>
+                <option>EN 60204-1</option>
+                <option>EN 61000-6-2</option>
+                <option>EN 60335-1</option>
+              </select>
+
+              <textarea
+                rows="8"
+                placeholder="Technical Construction File Details"
+                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3"
+              ></textarea>
+
+              <div className="grid grid-cols-2 gap-4">
+                <button className="bg-cyan-500 text-black font-semibold py-4 rounded-xl hover:bg-cyan-400 transition">
+                  Generate DOC
+                </button>
+
+                <button className="border border-slate-700 hover:border-cyan-400 py-4 rounded-xl transition">
+                  Save Template
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="bg-slate-900 border-y border-slate-800 py-24">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-black">Future SaaS Pricing</h2>
+          <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
+            Scale your certification engineering business with cloud-based documentation tools.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            {[
+              {
+                name:'Starter',
+                price:'Free',
+                features:['5 DOC downloads','Basic templates','PDF export']
+              },
+              {
+                name:'Professional',
+                price:'€29/mo',
+                features:['Unlimited DOC generation','DOCX export','Template branding']
+              },
+              {
+                name:'Enterprise',
+                price:'Custom',
+                features:['Team accounts','Cloud storage','API integrations']
+              }
+            ].map((plan,index)=>(
+              <div key={index} className="bg-slate-950 border border-slate-800 rounded-3xl p-8 hover:border-cyan-400 transition">
+                <h3 className="text-2xl font-bold">{plan.name}</h3>
+                <div className="text-5xl font-black text-cyan-400 mt-6">{plan.price}</div>
+
+                <div className="space-y-4 mt-10 text-left">
+                  {plan.features.map((f,i)=>(
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-3 h-3 rounded-full bg-cyan-400"></div>
+                      <span>{f}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button className="mt-10 w-full bg-cyan-500 text-black font-semibold py-3 rounded-xl hover:bg-cyan-400 transition">
+                  Choose Plan
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 className="text-2xl font-bold">CE Certification DOC Generator</h3>
+          <p className="text-slate-400 mt-2 text-sm">
+            Professional CE documentation generation platform.
+          </p>
+        </div>
+
+        <div className="text-slate-500 text-sm">
+          © 2026 CE DOC Generator • Built for Certification Engineers
+        </div>
+      </footer>
+    </div>
+  )
+}
+
